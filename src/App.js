@@ -15,15 +15,21 @@ const App = props => {
    */
 
   const [rootTimeline] = useState(new TimelineMax({ paused: true }));
-
+  const default_animation_component = useRef();
+  const prevProps = useRef();
+  const { animation } = props;
   // set up timelines on initial render
   useEffect(() => {
     console.warn('setting up initial timeline');
+
+    prevProps.current = animation;
   }, []);
 
   // detect changes in props
   useEffect(() => {
     console.warn('props changed');
+
+    prevProps.current = animation;
   }, [props]);
 
   return (
