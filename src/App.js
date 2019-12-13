@@ -22,6 +22,7 @@ const App = props => {
   useEffect(() => {
     console.warn('setting up initial timeline');
 
+    // update this for next props consumption
     prevProps.current = animation;
   }, []);
 
@@ -29,6 +30,7 @@ const App = props => {
   useEffect(() => {
     console.warn('props changed');
 
+    // update previous props now we have consumed them
     prevProps.current = animation;
   }, [props]);
 
