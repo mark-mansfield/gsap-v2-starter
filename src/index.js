@@ -67,7 +67,6 @@ const App = () => {
       <div className="left-panel" style={{ paddingLeft: '40px', paddingRight: '40px' }}>
         <div className="wrapper">
           <h1>Football Theme</h1>
-
           <h2>Match Id Overlay ideas</h2>
           <ul>
             <li>

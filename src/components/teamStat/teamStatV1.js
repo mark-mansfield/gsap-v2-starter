@@ -22,10 +22,30 @@ const TeamStatV1 = props => {
   let prevProps = useRef();
 
   // virtual dom refs
-  let adAsset = useRef();
+
+  // let mainGroup,
+  //   titleRect,
+  //   overlayScore,
+  //   overlayTitleText,
+  //   overlayGamePeriod,
+  //   svgOverlay,
+  //   svgOverlayShadow,
+  //   overlayShadow,
+  //   homeTeamGroup,
+  //   homeTeamName,
+  //   htLogo,
+  //   awayTeamGroup,
+  //   awayTeamName,
+  //   atLogo,
+  //   teamStats,
+  //   dataDividers,
+  //   adAsset = useRef();
+
   let mainGroup = useRef();
   let titleRect = useRef();
-  let titleScore = useRef();
+  let overlayScore = useRef();
+  let overlayTitleText = useRef();
+  let overlayGamePeriod = useRef();
   let svgOverlay = useRef();
   let svgOverlayShadow = useRef();
   let homeTeamGroup = useRef();
@@ -37,15 +57,18 @@ const TeamStatV1 = props => {
   let atLogo = useRef();
   let teamStats = useRef();
   let dataDividers = useRef();
+  let adAsset = useRef();
 
   const blueColor = '#002B5B';
   const logoSize = 60;
 
   const panelTimeline = () => {
     let tl = new TimelineMax();
-    tl.from(titleRect, 0.3, { scaleX: 0, transformOrigin: '50% 50%', autoAlpha: 0 }).from(mainGroup, 0.3, {
-      scaleY: 0
-    });
+    tl.from(titleRect, 0.3, { scaleX: 0, transformOrigin: '50% 50%', autoAlpha: 0 })
+      .staggerFrom([overlayTitleText, overlayScore, overlayGamePeriod], 0.3, { autoAlpha: 0 }, 0.1)
+      .from(mainGroup, 0.3, {
+        scaleY: 0
+      });
     return tl;
   };
 
@@ -82,7 +105,6 @@ const TeamStatV1 = props => {
     rootTimeline.add(overlayShadowTimeline(), '-=0.3');
     prevProps.current = animation;
 
-    console.log(svgOverlay.current.height.baseVal.value);
     // getoverlay dimensions
     setOverlayBBox({
       width: svgOverlay.current.width.baseVal.value,
@@ -121,13 +143,13 @@ const TeamStatV1 = props => {
     return (
       <Fragment>
         <rect id="titleRectangle" x="0" y="0" width="1300" height="80" fill={blueColor} />
-        <text className="large-text bold upper-case" fill="#fff" x="6%" y="50">
+        <text ref={e => (overlayTitleText = e)} className="large-text bold upper-case" fill="#fff" x="6%" y="50">
           {overlayTitle}
         </text>
-        <text ref={e => (titleScore = e)} className="large-text bold upper-case" fill="#fff" x="48%" y="50">
+        <text ref={e => (overlayScore = e)} className="large-text bold upper-case" fill="#fff" x="48%" y="50">
           {score}
         </text>
-        <text className="large-text bold upper-case" fill="#fff" x="82%" y="50">
+        <text ref={e => (overlayGamePeriod = e)} className="large-text bold upper-case" fill="#fff" x="82%" y="50">
           full time
         </text>
       </Fragment>
@@ -290,15 +312,10 @@ const TeamStatV1 = props => {
     );
   };
 
-  const renderOverlayShadow = () => {
-    return <rect ref={e => (overlayShadow = e)} id="overlay-shadow" width="100%" height="100%" x="0" y="0"></rect>;
-  };
-
   return (
     <div>
       <div className="svg-container">
         <svg id="teamStat" ref={svgOverlay} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 650">
-          {/* {renderOverlayShadow()} */}
           <g ref={e => (titleRect = e)}>{renderTitleLayout()}</g>
           <g ref={e => (mainGroup = e)}>{renderTeamStatPanels()}</g>
           <g id="homeTeamgroup" ref={e => (homeTeamGroup = e)}>
