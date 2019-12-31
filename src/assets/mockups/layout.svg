@@ -1,0 +1,28 @@
+
+<svg width="1000px" height="800px" viewBox="0 0 1000 800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g strokeWidth="1"  fillRule="evenodd">
+        <rect id="header" stroke="#070b1f" fill="#070b1f" x="300" y="0" width="400px" height="60px"></rect>
+        <text class="large-text" fill="#fff" width="50px" x="43%" y="35">Lily Homes Stadium</text>
+    </g>
+
+    <g  stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <rect id="left-panel" stroke="black" fill="black" x="0" y="60" width="500px" height="700px"></rect>
+         <text class="large-text upper-case" fill="#f5eb65"  x="18%" y="80%">Mounties Wanderers</text>
+    </g>
+
+    <g  stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <rect id="right-panel" stroke="#f5eb65" fill="#f5eb65" x="500" y="60" width="500px" height="700px"></rect>
+         <text class="large-text upper-case" fill="#000"  x="68%" y="80%">GHFA SPIRIT</text>
+    </g>
+
+ <g id="circle" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#fff" fill="#070b1f" cx="50%" cy="410" r="55"> </circle>
+        <text class="large-text" fill="#fff" width="50px" x="488" y="415">VS</text>
+   </g>
+</svg>
+
+
+
+
+
+

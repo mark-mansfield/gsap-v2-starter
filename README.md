@@ -4,4 +4,4 @@
 
 ## react latest
 
-This project is intended to be a default starter project for react gsap projects.
+A starter project for a test ligr theme

@@ -1,0 +1,23 @@
+@media (max-width: 499px) {
+  svg#teamStat {
+    width: 300px;
+  }
+}
+
+@media (min-width: 500px) {
+  svg#teamStat {
+    width: 400px;
+  }
+}
+
+@media (min-width: 720px) {
+  svg#teamStat {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  svg#teamStat {
+    width: 900px;
+  }
+}

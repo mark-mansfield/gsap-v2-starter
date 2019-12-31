@@ -1,0 +1,85 @@
+<svg width="1300" height="650"  viewBox=" 0 0 1300 560" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+
+<g>
+<rect x="0" y="0" width="1300" height="80" fill="#002B5B"></rect>
+<text fill="#fff" x="6%" y="40">Team Stats</text>
+<text fill="#fff" x="50%" y="40">2 - 1</text>
+<text fill="#fff" x="88%" y="40">full time</text>
+</g>
+
+<g id="homeTeamGroup">
+    <rect x="0" y="80" width="80" height="490" fill="black"></rect>
+    <text font-size="30"  x="-300" y="0" width="64" height="16" fill="yellow" transform="rotate(-90,0,0) translate(-90 45 )">Mounties Wanderers</text>
+    <line x1="0" y1="450" x2="80" y2="450" style="stroke:rgb(255,255,255);stroke-width:1" />
+</g>
+
+<rect id="homeTeamDataRect" x="80" y="80" width="160" height="490" fill="white"></rect>
+<rect id="awayTeamDataRect" x="1060" y="80" width="160" height="490" fill="white"></rect>
+
+
+<g id="awayTeamGroup">
+    <rect x="1220" y="80" width="80" height="490" fill="yellow"></rect>
+    <text font-size="30"  x="-300" y="1220"  fill="black" transform="rotate(-90,0,0) translate(-90 45 )">ghfa spirit </text>
+    <line x1="1220" y1="180" x2="1300" y2="180" style="stroke:rgb(0,0,0);stroke-width:1" />
+</g>
+
+
+<g id="dataColumn">
+<rect x="240" y="80" width="820" height="490" fill="#ececec"></rect>
+<line x1="240" y1="150" x2="1060" y2="150" style="stroke:rgb(0,0,0);stroke-width:1" />
+
+<text fill="green" x="12%" y="120">10</text>
+<text fill="blue" x="47%" y="120">total shots</text>
+<text fill="green" x="88%" y="120">4</text>
+
+<line x1="240" y1="220" x2="1060" y2="220" style="stroke:rgb(0,0,0);stroke-width:1" />
+
+<text fill="green" x="12%" y="190">5</text>
+<text fill="blue" x="46%" y="190">shots on target</text>
+<text fill="green" x="88%" y="190">4</text>
+
+<line x1="240" y1="290" x2="1060" y2="290" style="stroke:rgb(0,0,0);stroke-width:1" />
+
+<text fill="green" x="12%" y="260">2</text>
+<text fill="blue" x="47.5%" y="260">corners</text>
+<text fill="green" x="88%" y="260">6</text>
+
+<line x1="240" y1="360" x2="1060" y2="360" style="stroke:rgb(0,0,0);stroke-width:1" />
+
+<text fill="green" x="12%" y="330">6</text>
+<text fill="blue" x="48.5%" y="330">fouls</text>
+<text fill="green" x="88%" y="330">4</text>
+
+<line x1="240" y1="430" x2="1060" y2="430" style="stroke:rgb(0,0,0);stroke-width:1" />
+
+<text fill="green" x="12%" y="400">1</text>
+<text fill="blue" x="47%" y="400">yellow cads</text>
+<text fill="green" x="88%" y="400">1</text>
+
+<line x1="240" y1="500" x2="1060" y2="500" style="stroke:rgb(0,0,0);stroke-width:1" />
+
+<text fill="green" x="12%" y="470">0</text>
+<text fill="blue" x="47.5%" y="470">red cards</text>
+<text fill="green" x="88%" y="470">0</text>
+
+<text fill="green" x="12%" y="540">1</text>
+<text fill="blue" x="47.5%" y="540">off sides</text>
+<text fill="green" x="88%" y="540">8</text>
+</g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>
