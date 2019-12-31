@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, Fragment } from 'react';
 import { TimelineMax } from 'gsap/all';
-import '../../assets/css/App.css'; /* dev only - remove before build */
+
 const TeamStatV1 = props => {
   const [rootTimeline] = useState(new TimelineMax({ paused: true }));
 

@@ -14,7 +14,7 @@ import TeamStatV1 from './components/teamStat/teamStatV1';
 import homeTeam from './assets/images/homeTeam.png';
 import awayTeam from './assets/images/awayTeam.png';
 import addSmall from './assets/images/ad-300X70.png';
-
+import './assets/css/App.css'; /* dev only - remove before build */
 const App = () => {
   const [animation, setAnimation] = useState([]);
   const [homeTeamPenaltyScore, setHomeTeamPenaltyScore] = useState(0);

@@ -188,3 +188,26 @@ button:hover {
   -moz-box-shadow: -7px -9px 96px 43px rgba(0, 0, 0, 0.75);
   box-shadow: -7px -9px 96px 43px rgba(0, 0, 0, 0.75);
 }
+
+/* svg typography */
+.addSmall {
+  margin-left: calc((1000px - 300px) / 2);
+  margin-top: 760px;
+}
+
+.large-text {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.medium-text {
+  font-size: 23px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
